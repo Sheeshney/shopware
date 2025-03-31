@@ -48,6 +48,7 @@ if (!$accessToken) {
     echo json_encode(["error" => "Fehler beim Abrufen des Access Tokens."]);
     exit;
 }
+
 // POST-Daten auslesen
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $inputJSON = file_get_contents("php://input");
